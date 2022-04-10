@@ -1,0 +1,15 @@
+add_newline = false
+
+[git_status]
+# this is slow for big repositories (Linux, OpenBSD, ...)
+disabled = true
+
+# zutty cannot substitute characters so the angle bracket is simplified
+[character]
+format = '$symbol '
+success_symbol = '[>](bold green)'
+error_symbol = '[>](bold red)'
+vicmd_symbol = '[>](bold green)'
+
+[env_var.MESON_PROJECT_NAME]
+format = "\\[[$env_value](bold red)\\]"
