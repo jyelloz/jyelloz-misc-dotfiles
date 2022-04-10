@@ -1,0 +1,7 @@
+set line-graphics = utf-8
+set mouse = true
+set mouse-scroll = 1
+set mouse-wheel-cursor = true
+bind generic    R               !git revert %(commit)
+bind generic    C               !git cherry-pick %(commit)
+bind generic    B               !git rebase -i %(commit)
